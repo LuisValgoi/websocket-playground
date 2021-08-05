@@ -30,7 +30,7 @@ function App(): JSX.Element {
 
   return (
     <Container>
-      <Title text="List Item" />
+      <Title text="Messages" />
 
       <Input ref={inputRef} placeholder="message" />
       <AddButton onClick={handleSendButton}>Add</AddButton>
