@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { InternalChildren } from "./interfaces/children";
+import { InternalChildren } from "../interfaces/children";
 
 interface IListProps extends InternalChildren {}
 

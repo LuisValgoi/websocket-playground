@@ -6,6 +6,8 @@ This repository is dedicated to learn more about the usage of WebSockets.
 
 [https://www.youtube.com/watch?v=1BfCnjr_Vjg&ab_channel=Fireship](https://www.youtube.com/watch?v=1BfCnjr_Vjg&ab_channel=Fireship)
 
+https://www.valentinog.com/blog/socket-react/
+
 # What is
 
 - it enables you to build real-time features between a client & server
@@ -38,3 +40,15 @@ Connection: Upgrade
 4 - A `TCP/IP` is left opened and allows bi-directional data exchange with low latency (aka `FULL-DUPLEX`) 
 
 5 - It will stay open until one of the party drops off
+
+# Usage
+
+- `node .`.
+
+- `yarn start`.
+
+- `open` 2 tabs.
+
+- `type` in the input.
+
+- `press` send.

@@ -1,8 +1,14 @@
-const WebSocket = require("ws");
-const server = new WebSocket.Server({ port: 8080 });
+const http = require("http").createServer();
 
-server.on("connection", (socket) => {
-  socket.on("message", (message) => {
-    socket.send(`Roger that! ${message}`);
+const io = require("socket.io")(http, {
+  cors: { origin: "*" },
+});
+
+io.on("connection", (socket) => {
+  socket.on("CUSTOM_MESSAGE", (message) => {
+    console.log(message);
+    io.emit("CUSTOM_MESSAGE", message);
   });
 });
+
+http.listen(8080, () => console.log("listening on http://localhost:8080"));
